@@ -91,7 +91,7 @@ class HitCarder(object):
             if new_form == f.read():
                 return True
             else:
-                open("form_new.txt", "w", encoding="utf-8") as f_n
+                f_n = open("form_new.txt", "w", encoding="utf-8")
                 f_n.write(new_form)
                 f_n.flush()
         # with open("form.txt", "w", encoding="utf-8") as f:
